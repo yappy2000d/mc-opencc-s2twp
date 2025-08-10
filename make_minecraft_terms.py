@@ -11,6 +11,7 @@ url_zh_tw = "https://github.com/SkyEye-FAST/mc_lang/raw/refs/heads/master/full/z
 zh_cn = requests.get(url_zh_cn).json()
 zh_tw = requests.get(url_zh_tw).json()
 
+# source: https://github.com/Blackrowtw/Masa-series-mods-translation-zh_tw/tree/master?tab=readme-ov-file#%E8%87%AA%E5%AE%9A%E7%BE%A9%E8%BE%AD%E5%85%B8
 patch = [
     ["揹包", "背包"],
     ["臺", "台"],
@@ -63,5 +64,6 @@ subprocess.run([
     "-f", "text",
     "-t", "ocd2"
 ])
+
 
 print(f"Conversion completed in {time() - t:.2f} seconds.")
